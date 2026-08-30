@@ -1,10 +1,10 @@
 [![HACS Default](https://img.shields.io/badge/HACS-Default-blue.svg)](https://github.com/hacs/default)
-[![GitHub release](https://img.shields.io/github/release/myTselection/MyEnergy.svg)](https://github.com/myTselection/MyEnergy/releases)
-![GitHub repo size](https://img.shields.io/github/repo-size/myTselection/MyEnergy.svg)
+[![GitHub release](https://img.shields.io/github/release/myTselectionPublic/MyEnergy.svg)](https://github.com/myTselectionPublic/MyEnergy/releases)
+![GitHub repo size](https://img.shields.io/github/repo-size/myTselectionPublic/MyEnergy.svg)
 
-[![GitHub issues](https://img.shields.io/github/issues/myTselection/MyEnergy.svg)](https://github.com/myTselection/MyEnergy/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/myTselection/MyEnergy.svg)](https://github.com/myTselection/MyEnergy/commits/master)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/myTselection/MyEnergy.svg)](https://github.com/myTselection/MyEnergy/graphs/commit-activity)
+[![GitHub issues](https://img.shields.io/github/issues/myTselectionPublic/MyEnergy.svg)](https://github.com/myTselectionPublic/MyEnergy/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/myTselectionPublic/MyEnergy.svg)](https://github.com/myTselectionPublic/MyEnergy/commits/master)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/myTselectionPublic/MyEnergy.svg)](https://github.com/myTselectionPublic/MyEnergy/graphs/commit-activity)
 
 # :warning: STATUS: Experimental support for the new mijnenergie.be website
 
@@ -17,21 +17,21 @@ This integration is in no way affiliated with MijnEnergie.
 | :warning: Please don't report issues with this integration to MijnEnergie.be, they will not be able to support you. |
 | ------------------------------------------------------------------------------------------------------------------- |
 
-For local gas station fuel prices and mazout, please check out my other custom integration [Carbu.com](https://github.com/myTselection/Carbu_com)
+For local gas station fuel prices and mazout, please check out my other custom integration [Carbu.com](https://github.com/myTselectionPublic/Carbu_com)
 
-<p align="center"><img src="https://raw.githubusercontent.com/myTselection/MyEnergy/master/icon.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/myTselectionPublic/MyEnergy/master/icon.png"/></p>
 
 ## Installation
 
-- [HACS](https://hacs.xyz/): add url https://github.com/myTselection/MyEnergy as custom repository (HACS > Integration > option: Custom Repositories)
-  - [![Open your Home Assistant instance and open the repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=myTselection&repository=MyEnergy&category=integration)
+- [HACS](https://hacs.xyz/): add url https://github.com/myTselectionPublic/MyEnergy as custom repository (HACS > Integration > option: Custom Repositories)
+  - [![Open your Home Assistant instance and open the repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg?style=flat-square)](https://my.home-assistant.io/redirect/hacs_repository/?owner=myTselectionPublic&repository=MyEnergy&category=integration)
 
 - Restart Home Assistant
 - Add 'MyEnergy' integration via HA Settings > 'Devices and Services' > 'Integrations'
 - Enter the desired consumption details to create a sensor which constantly shows the cheapest contract matching your criteria and location. This will allow you to compare the cheapest market option with your current contract to allow you to know when it's worth switching to another contract.
 - <details><summary>Integration setup screenshots:</summary>
-	<p align="center"><img src="https://raw.githubusercontent.com/myTselection/MyEnergy/master/integration_setup_1.png"/></p>
-	<p align="center"><img src="https://raw.githubusercontent.com/myTselection/MyEnergy/master/integration_setup_2.png"/></p>
+	<p align="center"><img src="https://raw.githubusercontent.com/myTselectionPublic/MyEnergy/master/integration_setup_1.png"/></p>
+	<p align="center"><img src="https://raw.githubusercontent.com/myTselectionPublic/MyEnergy/master/integration_setup_2.png"/></p>
 
 </details>
 
@@ -69,14 +69,14 @@ The parsed GUI input profile is also exposed in the sensor attributes (`input pr
 
 ## Status
 
-Still some optimisations are planned, see [Issues](https://github.com/myTselection/MyEnergy/issues) section in GitHub.
+Still some optimisations are planned, see [Issues](https://github.com/myTselectionPublic/MyEnergy/issues) section in GitHub.
 
 ## Technical pointers
 
 The main logic and API connection related code can be found within source code MyEnergy/custom_components/MyEnery:
 
-- [sensor.py](https://github.com/myTselection/MyEnergy/blob/master/custom_components/myenergy/sensor.py)
-- [utils.py](https://github.com/myTselection/MyEnergy/blob/master/custom_components/myenergy/utils.py) -> mainly ComponentSession class
+- [sensor.py](https://github.com/myTselectionPublic/MyEnergy/blob/master/custom_components/myenergy/sensor.py)
+- [utils.py](https://github.com/myTselectionPublic/MyEnergy/blob/master/custom_components/myenergy/utils.py) -> mainly ComponentSession class
 
 All other files just contain boilerplat code for the integration to work wtihin HA or to have some constants/strings/translations.
 

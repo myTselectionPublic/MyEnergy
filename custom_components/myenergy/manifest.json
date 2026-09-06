@@ -2,7 +2,7 @@
   "domain": "myenergy",
   "name": "MyEnergy",
   "codeowners": [
-    "@myTselection"
+    "@myTselection","@myTselectionPublic"
   ],
   "config_flow": true,
   "dependencies": [],
